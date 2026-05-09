@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: spring-ai-backend
+    runtime: java
+    buildCommand: chmod +x mvnw && ./mvnw clean install
+    startCommand: java -jar target/*.jar
